@@ -1,0 +1,313 @@
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    
+    <title>Document</title>
+    
+    <style>
+        body{
+            width: 100%;
+            margin: 0;
+        }
+        .un_producto{
+            text-align: center;
+            width: 150px;
+            height: 200px;
+            border-radius: 7px;
+            background-color: rgb(252, 248, 241);
+        }
+        .todos_productos{
+            max-width: 700px;      
+            border-radius: 7px;
+            background-color: rgb(255, 212, 132);
+        }
+        .un_producto th{
+            height: 40px;
+        }
+        .img-producto{
+            height: 100px;
+            width: 100px;
+        }
+        .agregar-carrito{
+            width:100%;
+            height: 28px;
+            border-radius: 0px 0px 7px 7px;
+            border: none;
+            background-color: rgb(255, 186, 39);
+            font-size: 13pt;
+        }
+        .precio{
+            font-size: 25pt;
+        }
+        #total-pendiente{
+            font-size: 30pt;
+            margin-left: 15px;
+        }
+        .carrito{
+            background-color: rgb(255, 212, 131);
+            border-radius: 7px;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div><img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img><a id="total-pendiente"></a>
+            </div>
+            <div></div>
+            <div class="carrito" id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                <table id="lista-de-carrito" class="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">ProcesarCompra</a>
+            </div>
+        </div>
+    </header>
+    <table class="todos_productos" id="lista-productos">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="producto">
+                        <table class="un_producto" >
+                            <tbody>
+                                <th>NACHOS</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/nachos2.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">15.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="1" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div>  
+                </td>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>DUROS GRANDE</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/chicharron_edited_720x.webp" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">28.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="2" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>DUROS CHICO</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/chicharron_edited_720x.webp" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">15.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="3" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+            </tr>  
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>FRITURA RUEDA</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/rueda.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">10.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="4" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>CHETOS</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/TOTIS.jpeg" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">10.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="5" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>FRITURA HUESITO</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/HUESITO.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">10.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="6" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>CHOCO BANANA</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/chocobanana.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">12.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="7" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>CONO HELADO</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/cono helado.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">12.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="8" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>MANGONADA</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/mangonada.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">12.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="9" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="producto">
+                        <table  class="un_producto">
+                            <tbody>
+                                <th>HIELITOS</th>
+                                <tr>
+                                    <td>
+                                        <img src="img/hielitos.png" class="img-producto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="precio">$<span class="">12.00</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="agregar-carrito"   data-id="10" value="Agregar">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="js/Tcarrito.js" ></script>
+    <script src="js/Tpedido.js"></script>
+    
+</body>
+</html>
